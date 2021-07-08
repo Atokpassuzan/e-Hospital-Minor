@@ -34,7 +34,7 @@ mongoose
 //ejs
 app.use(expresslayouts);
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, ""));
+// app.set("views", path.join(__dirname, "views"));
 
 //nocache middleware
 app.use(nocache());
