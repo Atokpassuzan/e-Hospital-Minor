@@ -10,6 +10,7 @@ const bodyparser = require("body-parser");
 const methodOverride = require("method-override");
 const app = express();
 const server = http.createServer(app);
+const path = require("path");
 
 app.use("/public/images/", express.static("./public/images"));
 
@@ -33,6 +34,7 @@ mongoose
 //ejs
 app.use(expresslayouts);
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 //nocache middleware
 app.use(nocache());
