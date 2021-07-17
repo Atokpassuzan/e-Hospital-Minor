@@ -11,6 +11,8 @@ const methodOverride = require("method-override");
 const path = require("path");
 const app = express();
 const server = http.createServer(app);
+const dotenv = require("dotenv");
+dotenv.config();
 
 app.use("/public/images/", express.static("./public/images"));
 
@@ -18,12 +20,12 @@ app.use("/public/images/", express.static("./public/images"));
 require("./config/passport");
 
 //dbcongif
-const db = require("./config/keys").MongoURI;
+// const db = require("./config/keys").MongoURI;
 
 //connect to mongo
 
 mongoose
-  .connect(db, {
+  .connect(process.env.MONGO_URI, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false,
