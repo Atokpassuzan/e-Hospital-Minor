@@ -50,7 +50,10 @@ app.use(
 );
 
 //bodyparsser
-app.use(bodyparser.urlencoded({ extended: false }));
+// app.use(bodyparser.urlencoded({ extended: false }));
+//No bodyparser needed
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 //exp session
 //express-session middleware
 //we can search from express session github
