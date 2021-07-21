@@ -42,7 +42,7 @@
           <h3>
             Welcome to<br /><span>e-Hospital</span><br />
             <p>We Are Right Where You Need Us</p>
-            <hr class="home" />
+            <!-- <hr class="home" /> -->
           </h3>
           <p>
             A webapp where patients, doctors and hospital departments are linked
@@ -52,49 +52,57 @@
         </div>
         <div class="imgBox">
           <img src="/public/images/hospital_1.png" class="user" />
-          <a href="#" class="hvr-grow-shadow" id="user_btn"></a>
+          <!-- <a href="#" class="hvr-grow-shadow" id="user_btn"></a> -->
         </div>
         <div class="model_3d">
-          <img class="user_3d" src="/public/images/users_1.png" />
+          <img class="user_3d" src="/public/images/pat_5.png" />
+          <a href="#" class="hvr-grow-shadow" id="user_btn"></a>
         </div>
       </div>
       <div class="usersBox">
-        <p>Select Account Type</p>
-        <ul class="thumb">
-          <li class="hvr-grow-shadow">
-            <img
-              id="thumb_1"
-              src="/public/images/pat_1.png "
-              onclick="imgSlider1('/public/images/pat_1.png');
-              imgSlider2('/public/images/pat_3.png')
-             changeCircleColor('#017143');
-             changeButtonLink('/patient/welcome');
-             changeButtonName('Click Here To Enter Patient Section');"
-            />Patient
-          </li>
-          <li class="hvr-grow-shadow">
-            <img
-              id="thumb_2"
-              src="/public/images/doc_1.png"
-              onclick="imgSlider1('/public/images/doc_1.png');
-              imgSlider2('/public/images/doc_3.png')
-             changeCircleColor('#0097A7');
-             changeButtonLink('/doctor/welcomedr');
-             changeButtonName('Click Here To Enter Doctor Section');"
-            />Doctor
-          </li>
-          <li class="hvr-grow-shadow">
-            <img
-              id="thumb_3"
-              src="/public/images/admin_1.png"
-              onclick="imgSlider1('/public/images/admin_1.png'); 
-              imgSlider2('/public/images/admin_3.png')
-            changeCircleColor('#e78200');
-            changeButtonLink('/admin/adminLogin');
-            changeButtonName('Click Here To Enter Admin Section ');"
-            />Admin
-          </li>
-        </ul>
+        <div class="textBox2">
+          <p>Choose Account</p>
+        </div>
+        <div class="users_thumb">
+          <ul>
+            <li class="hvr-grow-shadow">
+              <img
+                id="thumb_1"
+                src="/public/images/pat_1.png "
+                onclick="imgSlider1('/public/images/pat_1.png');
+                    imgSlider2('/public/images/pat_3.png')
+                   changeCircleColor('#017143');
+                   changeButtonLink('/patient/welcome');
+                   changeButtonName('Enter Patient Section');
+                   changeButtonTextColor('#017143');"
+              />Patient
+            </li>
+            <li class="hvr-grow-shadow">
+              <img
+                id="thumb_2"
+                src="/public/images/doc_1.png"
+                onclick="imgSlider1('/public/images/doc_1.png');
+                    imgSlider2('/public/images/doc_3.png')
+                   changeCircleColor('#0097A7');
+                   changeButtonLink('/doctor/welcomedr');
+                   changeButtonName('Enter Doctor Section');
+                   changeButtonTextColor('#0097A7');"
+              />Doctor
+            </li>
+            <li class="hvr-grow-shadow">
+              <img
+                id="thumb_3"
+                src="/public/images/admin_1.png"
+                onclick="imgSlider1('/public/images/admin_1.png'); 
+                    imgSlider2('/public/images/admin_3.png')
+                  changeCircleColor('#e78200');
+                  changeButtonLink('/admin/adminLogin');
+                  changeButtonName('Enter Admin Section ');
+                  changeButtonTextColor('#e78200');"
+              />Admin
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -120,6 +128,10 @@
       function changeButtonName(btnname) {
         $("#user_btn").show();
         document.querySelector("#user_btn").innerHTML = btnname;
+      }
+      function changeButtonTextColor(btnTextColor) {
+        $("#user_btn").show();
+        document.querySelector("#user_btn").style.color = btnTextColor;
       }
     </script>
   </body>
