@@ -110,14 +110,14 @@
                 <form action="/doctor/Dregister" method="POST">
                   <div class="form-group">
                     <label for="regNumber">Registration Number</label>
-                    <input type="name" id="regNumber" name="regNumber" class="form-control hvr-skew-forward"
+                    <input type="name" id="regNumber" name="regNumber" class="form-control"
                       placeholder="Enter registration number" value="<%= typeof name != 'undefined' ? name : '' %>" />
                   </div>
                   <div class="form-row">
                     <!-- Used to inplace two inputs or more in one row -->
                     <div class="form-group col-md-6">
                       <label class="form-control-label" for="salutation">Salutation</label>
-                      <select name="salutation" id="salutation" class="form-control custom-select hvr-skew-forward">
+                      <select name="salutation" id="salutation" class="form-control custom-select ">
                         <option value="Dr.">Dr.</option>
                         <option value="Asso. Prof.">Asst. Prof.</option>
                         <option value="Prof">Prof</option>
@@ -132,44 +132,44 @@
                     </div>
                     <div class="form-group col-md-6">
                       <label for="name">Doctor Name</label>
-                      <input type="name" id="name" name="name" class="form-control hvr-skew-forward"
+                      <input type="name" id="name" name="name" class="form-control "
                         placeholder="Enter  Full Name" value="<%= typeof name != 'undefined' ? name : '' %>" />
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control hvr-skew-forward"
+                    <input type="email" id="email" name="email" class="form-control "
                       placeholder="Enter Email" value="<%= typeof email != 'undefined' ? email : '' %>" />
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="password">Password</label>
-                      <input type="password" id="password" name="password" class="form-control hvr-skew-forward"
+                      <input type="password" id="password" name="password" class="form-control "
                         placeholder="Create Password" value="<%= typeof password != 'undefined' ? password : '' %>" />
                     </div>
                     <div class="form-group col-md-6">
                       <label for="password2">Confirm Password</label>
-                      <input type="password" id="password2" name="password2" class="form-control hvr-skew-forward"
+                      <input type="password" id="password2" name="password2" class="form-control "
                         placeholder="Confirm Password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="phonenumber">Phone Number</label>
-                      <input type="phonenumber" id="phonenumber" name="phonenumber" class="form-control hvr-skew-forward"
+                      <input type="phonenumber" id="phonenumber" name="phonenumber" class="form-control"
                         placeholder="Enter phone number" pattern="[0-9]{10}"
                         value="<%= typeof phonenumber != 'undefined' ? phonenumber : '' %>" />
                     </div>
                     <div class="form-group col-md-6">
                       <label for="experience">Years of Experience</label>
-                      <input type="number" id="experience" name="experience" class="form-control hvr-skew-forward"
+                      <input type="number" id="experience" name="experience" class="form-control"
                         placeholder="Enter years of experience"
                         value="<%= typeof experience != 'undefined' ? experience : '' %>" />
                     </div>
                   </div>
                   <div class="form-group ">
                     <label for="speciality">Speciality</label>
-                    <select name="speciality" id="speciality" class="form-control custom-select hvr-skew-forward">
+                    <select name="speciality" id="speciality" class="form-control custom-select ">
                       <option value="Allergy & Immunology">Allergy & Immunology</option>
                       <option value="Anesthesiology">Anesthesiology</option>
                       <option value="Colon & Rectal Surgery">Colon & Rectal Surgery</option>
@@ -198,7 +198,7 @@
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="qualification">Qualification</label>
-                      <input type="name" id="qualification" name="qualification" class="form-control hvr-skew-forward"
+                      <input type="name" id="qualification" name="qualification" class="form-control"
                         placeholder="Enter your qualification"
                         value="<%= typeof qualification != 'undefined' ? qualification : '' %>" />
                     </div>
