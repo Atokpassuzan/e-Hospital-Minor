@@ -13,18 +13,18 @@ const {
     db
 } = require('../models/RegNum')
 
-var i;
-var answer = [];
-db.collection("RegNum").findOne({}, function (err, result) {
-    if (err) throw err;
-    var len = result.regnum_doctor.length;
-    //console.log(len);
-    for (i = 0; i < len; i++) {
-        answer.push(result.regnum_doctor[i]);
-        //console.log(answer);
-    }
-    // console.log(answer);
-})
+// var i;
+// var answer = [];
+// db.collection("RegNum").findOne({}, function (err, result) {
+//     if (err) throw err;
+//     var len = result.regnum_doctor.length;
+//     //console.log(len);
+//     for (i = 0; i < len; i++) {
+//         answer.push(result.regnum_doctor[i]);
+//         //console.log(answer);
+//     }
+//     // console.log(answer);
+// })
 
 
 

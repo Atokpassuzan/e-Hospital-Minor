@@ -15,18 +15,18 @@ const Doctor = require("../models/Doctor");
 const Availability = require("../models/Availability");
 const { db } = require("../models/RegNum");
 
-var i;
-var answer = [];
-db.collection("RegNum").findOne({}, function (err, result) {
-  if (err) throw err;
-  var len = result.regnum_patient.length;
-  //console.log(len);
-  for (i = 0; i < len; i++) {
-    answer.push(result.regnum_patient[i]);
-    //console.log(answer);
-  }
-  // console.log(answer);
-});
+// var i;
+// var answer = [];
+// db.collection("RegNum").findOne({}, function (err, result) {
+//   if (err) throw err;
+//   var len = result.regnum_patient.length;
+//   //console.log(len);
+//   for (i = 0; i < len; i++) {
+//     answer.push(result.regnum_patient[i]);
+//     //console.log(answer);
+//   }
+//   // console.log(answer);
+// });
 
 //login page
 router.get("/login", (req, res) => res.render("login")); //arrowfunc with req and res object
