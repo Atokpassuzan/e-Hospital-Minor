@@ -25,7 +25,7 @@ require("./config/passport");
 //connect to mongo
 
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect('mongodb+srv://Sujan:369369@project.wiqmt.mongodb.net/?retryWrites=true&w=majority', {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false,
