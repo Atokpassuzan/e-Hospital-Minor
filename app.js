@@ -24,8 +24,10 @@ require("./config/passport");
 
 //connect to mongo
 
+const url = process.env.MONGO_URI
+
 mongoose
-  .connect('mongodb+srv://Sujan:369369@project.wiqmt.mongodb.net/?retryWrites=true&w=majority', {
+  .connect(url, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false,
