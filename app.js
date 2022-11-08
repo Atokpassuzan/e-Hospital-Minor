@@ -24,7 +24,7 @@ require("./config/passport");
 
 //connect to mongo
 
-const url = process.env.MONGO_URI
+const url = process.env.MONGO_URI;
 
 mongoose
   .connect(url, {
